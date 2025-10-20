@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lumenor — Support</title>
+  <meta name="description" content="Contact Lumenor support. We’ll get you back on track quickly." />
+  <link rel="canonical" href="https://babaheights.com/lumenor/Website/support.html" />
+  <meta name="robots" content="index, follow" />
+  <!-- Hreflang alternates for Support -->
+  <link rel="alternate" hreflang="x-default" href="https://babaheights.com/Website/support.html" />
+  <link rel="alternate" hreflang="en" href="https://babaheights.com/Website/support.html" />
+  <link rel="alternate" hreflang="en-GB" href="https://babaheights.com/Website/en-GB/support.html" />
+  <link rel="alternate" hreflang="en-AU" href="https://babaheights.com/Website/en-AU/support.html" />
+  <link rel="alternate" hreflang="da" href="https://babaheights.com/Website/da/support.html" />
+  <link rel="alternate" hreflang="de-DE" href="https://babaheights.com/Website/de-DE/support.html" />
+  <link rel="alternate" hreflang="fr-FR" href="https://babaheights.com/Website/fr-FR/support.html" />
+  <link rel="alternate" hreflang="fr-CA" href="https://babaheights.com/Website/fr-CA/support.html" />
+  <link rel="alternate" hreflang="nl-NL" href="https://babaheights.com/Website/nl-NL/support.html" />
+  <link rel="alternate" hreflang="ja" href="https://babaheights.com/Website/ja/support.html" />
+  <link rel="alternate" hreflang="ko" href="https://babaheights.com/Website/ko/support.html" />
+  <link rel="alternate" hreflang="nb" href="https://babaheights.com/Website/nb/support.html" />
+  <link rel="alternate" hreflang="sv" href="https://babaheights.com/Website/sv/support.html" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/lumenor/assets/app-icon-1024.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/lumenor/assets/app-icon-1024.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/lumenor/assets/app-icon-1024.png" />
+  <link rel="manifest" href="/lumenor/site.webmanifest" />
+  <meta name="theme-color" content="#0f172a" />
+  <meta property="og:title" content="Lumenor — Support" />
+  <meta property="og:description" content="Contact Lumenor support. We’ll get you back on track quickly." />
+  <meta property="og:image" content="https://babaheights.com/lumenor/assets/app-icon-1024.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Lumenor" />
+  <meta property="og:url" content="https://babaheights.com/lumenor/Website/support.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Lumenor — Support" />
+  <meta name="twitter:description" content="Contact Lumenor support. We’ll get you back on track quickly." />
+  <meta name="twitter:image" content="https://babaheights.com/DeepPath/Assets.xcassets/AppIcon.appiconset/DeepPath-icon-1024.png" />
+</head>
+<body>
+  <header class="site">
+    <div class="container bar">
+      <div class="brand"><a href="index.html" style="color:inherit; text-decoration:none;"><span class="badge"></span> Lumenor</a></div>
+      <nav>
+        <a id="nav_features" href="index.html#features">Features</a>
+        <a id="nav_pricing" href="index.html#pricing">Pricing</a>
+        <a id="nav_support" href="support.html">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container support-hero">
+      <h1 id="support_title" style="margin:0 0 6px;">We’re here to help</h1>
+      <p id="support_sub" class="sub" style="margin:0; max-width:720px;">Send us a note and we’ll reply by email. Include details like macOS version and steps to reproduce if you’re reporting an issue.</p>
+    </section>
+
+    <section class="container section">
+      <form id="support-form" class="support card pad" data-to="lumenorapp@babaheights.com">
+        <div class="form-row">
+          <div class="col field">
+            <label id="label_name" for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" />
+          </div>
+          <div class="col field">
+            <label id="label_email" for="email">Email<span aria-hidden="true"> *</span></label>
+            <input id="email" name="email" type="email" required autocomplete="email" />
+            <div id="help_email" class="help">We’ll reply to this address.</div>
+          </div>
+        </div>
+        <div class="field">
+          <label id="label_message" for="message">Message<span aria-hidden="true"> *</span></label>
+          <textarea id="message" name="message" rows="8" required placeholder="How can we help?"></textarea>
+        </div>
+        <div class="field">
+          <button id="btn_send" class="btn primary" type="submit">Send message</button>
+          <span class="notice" id="email_note">Or email us directly: <a href="mailto:lumenorapp@babaheights.com">lumenorapp@babaheights.com</a></span>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container row">
+      <div>© <span id="year"></span> Lumenor</div>
+      <div>
+        <a href="index.html">Home</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Lumenor Support",
+    "url": "https://babaheights.com/Website/support.html",
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "email": "lumenorapp@babaheights.com",
+      "contactType": "customer support",
+      "availableLanguage": ["en","da","de","fr","nl","ja","ko","nb","sv"]
+    }]
+  }
+  </script>
+  <script src="scripts.js"></script>
+</body>
+</html>
