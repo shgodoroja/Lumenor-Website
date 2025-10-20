@@ -18,6 +18,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>privacy.html</loc>
+    <lastmod>2025-10-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
   <url><loc>da/index.html</loc><lastmod>2025-10-18</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>da/support.html</loc><lastmod>2025-10-18</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>de-DE/index.html</loc><lastmod>2025-10-18</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
