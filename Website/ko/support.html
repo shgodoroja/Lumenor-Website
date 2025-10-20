@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lumenor — 지원</title>
+  <meta name="description" content="Lumenor 지원에 문의하세요. 이메일로 신속히 답변드립니다." />
+  <link rel="canonical" href="https://babaheights.com/ko/support.html" />
+  <link rel="stylesheet" href="/Website/styles.css" />
+</head>
+<body>
+  <header class="site"><div class="container bar"><div class="brand"><a href="/ko/" style="color:inherit; text-decoration:none;"><span class="badge"></span> Lumenor</a></div><nav><a href="/ko/#features">기능</a><a href="/ko/#pricing">가격</a><a href="/ko/support.html">지원</a></nav></div></header>
+  <main>
+    <section class="container support-hero"><h1 style="margin:0 0 6px;">도움이 필요하신가요?</h1><p class="sub" style="margin:0; max-width:720px;">이메일로 문의해 주세요. macOS 버전과 재현 단계를 알려주시면 더 빠릅니다.</p></section>
+    <section class="container section">
+      <form id="support-form" class="support card pad" data-to="lumenorapp@babaheights.com">
+        <div class="form-row"><div class="col field"><label for="name">이름</label><input id="name" name="name" type="text" autocomplete="name" /></div><div class="col field"><label for="email">이메일<span aria-hidden="true"> *</span></label><input id="email" name="email" type="email" required autocomplete="email" /><div class="help">이 주소로 답장합니다.</div></div></div>
+        <div class="field"><label for="message">메시지<span aria-hidden="true"> *</span></label><textarea id="message" name="message" rows="8" required placeholder="무엇을 도와드릴까요?"></textarea></div>
+        <div class="field"><button class="btn primary" type="submit">보내기</button><span class="notice">또는 이메일: <a href="mailto:lumenorapp@babaheights.com">lumenorapp@babaheights.com</a></span></div>
+      </form>
+    </section>
+  </main>
+  <footer><div class="container row"><div>© <span id="year"></span> Lumenor</div><div><a href="/ko/">홈</a></div></div></footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="/Website/scripts.js"></script>
+</body>
+</html>
