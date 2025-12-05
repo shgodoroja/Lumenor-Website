@@ -7,6 +7,104 @@ function track(event, data){
   // console.log('track', event, data)
 }
 
+function ensureSmartBannerMeta(){
+  if(document.querySelector('meta[name="apple-itunes-app"]')) return;
+  const meta = document.createElement('meta');
+  meta.name = 'apple-itunes-app';
+  meta.content = 'app-id=6754094107';
+  document.head.appendChild(meta);
+}
+
+const LANG_OPTIONS = [
+  { code: 'en', label: 'English', path: '/' },
+  { code: 'en-GB', label: 'English (UK)', path: '/en-GB/' },
+  { code: 'en-AU', label: 'English (AU)', path: '/en-AU/' },
+  { code: 'da', label: 'Dansk', path: '/da/' },
+  { code: 'de-DE', label: 'Deutsch', path: '/de-DE/' },
+  { code: 'fr-FR', label: 'Français (FR)', path: '/fr-FR/' },
+  { code: 'fr-CA', label: 'Français (CA)', path: '/fr-CA/' },
+  { code: 'nl-NL', label: 'Nederlands', path: '/nl-NL/' },
+  { code: 'ja', label: '日本語', path: '/ja/' },
+  { code: 'ko', label: '한국어', path: '/ko/' },
+  { code: 'nb', label: 'Norsk', path: '/nb/' },
+  { code: 'sv', label: 'Svenska', path: '/sv/' }
+];
+
+const LANG_SLUG_MAP = {
+  'en': '/',
+  'en-GB': '/en-GB/',
+  'en-AU': '/en-AU/',
+  'da': '/da/',
+  'de': '/de-DE/',
+  'de-DE': '/de-DE/',
+  'fr': '/fr-FR/',
+  'fr-FR': '/fr-FR/',
+  'fr-CA': '/fr-CA/',
+  'nl': '/nl-NL/',
+  'nl-NL': '/nl-NL/',
+  'ja': '/ja/',
+  'ko': '/ko/',
+  'nb': '/nb/',
+  'sv': '/sv/'
+};
+
+function deriveBaseFromPath(pathname){
+  const match = pathname.match(/^\/([a-zA-Z-]+)\//);
+  if(match && LANG_SLUG_MAP[match[1]]) return LANG_SLUG_MAP[match[1]];
+  return '/';
+}
+
+function initLanguageSwitcher(){
+  const nav = document.querySelector('header nav');
+  if(!nav || document.getElementById('lang-select')) return;
+  const currentPath = window.location.pathname;
+  const isSupport = currentPath.includes('support');
+  const currentLang = document.documentElement.lang || 'en';
+  const currentBase = LANG_SLUG_MAP[currentLang] || deriveBaseFromPath(currentPath);
+
+  const select = document.createElement('select');
+  select.id = 'lang-select';
+  select.className = 'lang-select';
+  select.setAttribute('aria-label', 'Change language');
+
+  LANG_OPTIONS.forEach(opt => {
+    const option = document.createElement('option');
+    option.value = opt.path;
+    option.textContent = opt.label;
+    select.appendChild(option);
+  });
+  select.value = currentBase;
+
+  select.addEventListener('change', function(e){
+    const base = e.target.value || '/';
+    const suffix = isSupport ? 'support.html' : '';
+    const dest = base === '/' ? `/${suffix}` : `${base}${suffix}`;
+    window.location.href = suffix ? dest : base;
+  });
+
+  const wrap = document.createElement('div');
+  wrap.className = 'lang-switcher';
+  wrap.appendChild(select);
+  nav.appendChild(wrap);
+}
+
+function ensureFooterLinks(){
+  const footerNav = document.querySelector('footer .row > div:last-child');
+  if(!footerNav) return;
+  const hasPrivacy = footerNav.innerHTML.includes('privacy.html');
+  if(!hasPrivacy){
+    const dot = document.createElement('span');
+    dot.style.opacity = '.5';
+    dot.style.padding = '0 6px';
+    dot.textContent = '•';
+    const privacy = document.createElement('a');
+    privacy.href = '/privacy.html';
+    privacy.textContent = 'Privacy';
+    footerNav.appendChild(dot);
+    footerNav.appendChild(privacy);
+  }
+}
+
 function initSupportForm(){
   const form = byId('support-form');
   if(!form) return;
@@ -29,6 +127,9 @@ function initSupportForm(){
 }
 
 document.addEventListener('DOMContentLoaded', function(){
+  ensureSmartBannerMeta();
+  initLanguageSwitcher();
+  ensureFooterLinks();
   initSupportForm();
   tryApplyI18n();
 });

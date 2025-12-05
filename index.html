@@ -6,6 +6,7 @@
   <title>Lumenor — Habit tracker for Mac</title>
   <meta name="description" content="Lumenor is a focused habit tracker for Mac — build streaks, get gentle reminders, and see progress at a glance with Numeric and Calendar grids." />
   <link rel="canonical" href="https://babaheights.com/" />
+  <meta name="apple-itunes-app" content="app-id=6754094107" />
   <meta name="robots" content="index, follow" />
   <!-- Hreflang alternates -->
   <link rel="alternate" hreflang="x-default" href="https://babaheights.com/" />
@@ -53,10 +54,23 @@
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "Lumenor",
+    "description": "Lumenor is a focused habit tracker for Mac — build streaks, get gentle reminders, and see progress at a glance with Numeric and Calendar grids.",
     "url": "https://babaheights.com/",
+    "image": "https://babaheights.com/assets/app-icon-1024.png",
     "operatingSystem": "macOS",
-    "applicationCategory": "ProductivityApplication",
-    "offers": null
+    "applicationCategory": "https://schema.org/ProductivityApplication",
+    "downloadUrl": "https://apps.apple.com/app/id6754094107?mt=12",
+    "offers": {
+      "@type": "Offer",
+      "url": "https://apps.apple.com/app/id6754094107?mt=12",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Lumenor",
+      "url": "https://babaheights.com/"
+    }
   }
   </script>
   <script type="application/ld+json">
@@ -67,6 +81,58 @@
     "url": "https://babaheights.com/"
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Lumenor",
+    "url": "https://babaheights.com/",
+    "logo": "https://babaheights.com/assets/app-icon-1024.png",
+    "sameAs": [
+      "https://apps.apple.com/app/id6754094107?mt=12"
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Does Lumenor work offline?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Habits, history, and reminders live on your Mac. There’s no account to create, and you can keep tracking even without Wi‑Fi."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do reminders behave?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can create daily reminders per habit at the times you prefer. Notifications are local and can be turned off in the app or macOS Settings."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How are streaks protected?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "One‑click Today uses a sensible grace window so late check‑ins still count. The Streak Counter Bar shows current and best runs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I export or get support?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can export snapshots from Stats to share progress or keep a backup. If you need help, visit https://babaheights.com/support.html."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <header class="site">
@@ -74,6 +140,7 @@
       <div class="brand"><img class="logo" src="/assets/favicon-32.png" alt="Lumenor icon" /> Lumenor</div>
       <nav>
         <a id="nav_features" href="#features">Features</a>
+        <a id="nav_faq" href="#faq">FAQ</a>
         <a id="nav_support" href="support.html">Support</a>
       </nav>
     </div>
@@ -89,6 +156,32 @@
           <img class="appstore-badge" alt="Download on the Mac App Store"
                src="https://tools.applemediaservices.com/api/badges/download-on-the-mac-app-store/black/en-US?size=250x83&releaseDate=2025-09-24&kind=macOS" />
         </a>
+      </div>
+    </section>
+
+    <section class="container section">
+      <div class="section-heading">
+        <div class="kicker">Why Lumenor for Mac</div>
+        <h2>Mac-native habit tracking that stays out of your way</h2>
+        <p class="sub">Keep streaks, reminders, and exports in one calm place. Lumenor is offline-friendly, private by default, and tuned for keyboard-driven workflows.</p>
+      </div>
+      <div class="grid why-grid">
+        <div class="card pad">
+          <h3>Built for macOS</h3>
+          <p>Native menus, shortcuts, and a layout tuned for large screens. Dark mode is perfected, and the UI mirrors the macOS palette.</p>
+        </div>
+        <div class="card pad">
+          <h3>Private by default</h3>
+          <p>No account required. Your habits and reminders stay on your Mac, with export options when you want to share progress.</p>
+        </div>
+        <div class="card pad">
+          <h3>Reminders you control</h3>
+          <p>Per-habit daily notifications, sensible grace windows, and a Streak Counter Bar that keeps momentum visible.</p>
+        </div>
+        <div class="card pad">
+          <h3>Fast check-ins</h3>
+          <p>One-click Today, keyboard-friendly navigation, and two high-contrast grids make logging frictionless.</p>
+        </div>
       </div>
     </section>
 
@@ -139,6 +232,32 @@
         <span class="pill">Keyboard‑friendly</span>
         <span class="pill">Dark‑mode perfected</span>
         <span class="pill">Accessible labels</span>
+      </div>
+    </section>
+
+    <section class="container section" id="faq">
+      <div class="section-heading">
+        <div class="kicker">Questions, answered</div>
+        <h2>What to know before you start a streak</h2>
+        <p class="sub">Lumenor keeps things simple: private storage, offline access, and reminders that respect your focus time.</p>
+      </div>
+      <div class="faq">
+        <div class="qa card pad">
+          <h3>Does Lumenor work offline?</h3>
+          <p>Yes. Habits, history, and reminders live on your Mac. There’s no account to create, and you can keep tracking even without Wi‑Fi.</p>
+        </div>
+        <div class="qa card pad">
+          <h3>How do reminders behave?</h3>
+          <p>Create daily reminders per habit at the times you prefer. Notifications are local and can be turned off in the app or macOS Settings.</p>
+        </div>
+        <div class="qa card pad">
+          <h3>How are streaks protected?</h3>
+          <p>One‑click Today uses a sensible grace window so late check‑ins still count. The Streak Counter Bar shows current and best runs.</p>
+        </div>
+        <div class="qa card pad">
+          <h3>Can I export or get support?</h3>
+          <p>Export snapshots from Stats to share progress or back things up. If you need help, head to <a href="support.html">Support</a> and we’ll reply quickly.</p>
+        </div>
       </div>
     </section>
 

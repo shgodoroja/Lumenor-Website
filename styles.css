@@ -36,8 +36,19 @@ header .bar { display:flex; align-items:center; justify-content:space-between; p
 header .brand { display:flex; align-items:center; gap:12px; font-weight:700; letter-spacing:0.2px; }
 .badge { display:none; }
 .logo { width:28px; height:28px; border-radius:6px; display:inline-block; box-shadow: 0 2px 8px rgba(0,0,0,0.25); }
-nav a { margin-left: 16px; color: var(--text); opacity: .85; }
+nav { display:flex; align-items:center; gap: 14px; }
+nav a { color: var(--text); opacity: .85; }
 nav a:hover { opacity: 1; }
+.lang-switcher select {
+  background: rgba(255,255,255,0.05);
+  color: var(--text);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 10px;
+  padding: 9px 10px;
+  font-weight: 600;
+  min-width: 150px;
+}
+.lang-switcher select:focus { outline: 2px solid rgba(60,149,240,0.7); }
 
 .hero { padding: 72px 0 36px; text-align: center; }
 .kicker { color: var(--warn); font-weight: 600; letter-spacing: .5px; }
@@ -71,6 +82,19 @@ nav a:hover { opacity: 1; }
 .trust { display:flex; gap: 18px; flex-wrap: wrap; }
 .pill { padding: 8px 12px; border-radius: 999px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); color: var(--text); }
 
+.section-heading { margin-bottom: 16px; text-align: left; }
+.section-heading h2 { margin: 4px 0; font-size: clamp(26px, 3vw, 34px); }
+.section-heading .sub { margin: 0; color: var(--muted); max-width: 760px; }
+
+.why-grid .card { grid-column: span 4; border: 1px solid rgba(255,255,255,0.09); background: rgba(255,255,255,0.05); }
+.why-grid h3 { margin: 8px 0 6px; }
+.why-grid p { margin: 0; color: var(--muted); }
+
+.faq { display:grid; gap: 16px; grid-template-columns: repeat(12, 1fr); }
+.faq .qa { grid-column: span 6; border: 1px solid rgba(255,255,255,0.08); background: rgba(255,255,255,0.05); }
+.faq h3 { margin: 6px 0 8px; font-size: 17px; }
+.faq p { margin: 0; color: var(--muted); }
+
 footer { margin-top: 48px; padding: 28px 0; border-top: 1px solid rgba(255,255,255,0.06); color: var(--muted); font-size: 14px; }
 footer .row { display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap: wrap; }
 
@@ -89,7 +113,10 @@ form.support { max-width: 680px; margin: 0 auto; }
 @media (max-width: 900px){
   .feature { grid-column: span 6; }
   .shot { grid-column: span 12; }
+  .why-grid .card { grid-column: span 6; }
+  .faq .qa { grid-column: span 12; }
 }
 @media (max-width: 600px){
   .feature { grid-column: span 12; }
+  .why-grid .card { grid-column: span 12; }
 }
