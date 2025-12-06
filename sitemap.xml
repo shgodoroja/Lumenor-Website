@@ -2,42 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://babaheights.com/</loc>
-    <lastmod>2025-12-05</lastmod>
+    <lastmod>2025-12-05T00:00:00Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://babaheights.com/support.html</loc>
-    <lastmod>2025-12-05</lastmod>
+    <lastmod>2025-12-05T00:00:00Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://babaheights.com/privacy.html</loc>
-    <lastmod>2025-12-05</lastmod>
+    <lastmod>2025-12-05T00:00:00Z</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
-  <url><loc>https://babaheights.com/da/</loc><lastmod>2025-12-05</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://babaheights.com/da/support.html</loc><lastmod>2025-12-05</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://babaheights.com/de-DE/</loc><lastmod>2025-12-05</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://babaheights.com/de-DE/support.html</loc><lastmod>2025-12-05</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://babaheights.com/fr-FR/</loc><lastmod>2025-12-05</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://babaheights.com/fr-FR/support.html</loc><lastmod>2025-12-05</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://babaheights.com/fr-CA/</loc><lastmod>2025-12-05</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://babaheights.com/fr-CA/support.html</loc><lastmod>2025-12-05</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://babaheights.com/nl-NL/</loc><lastmod>2025-12-05</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://babaheights.com/nl-NL/support.html</loc><lastmod>2025-12-05</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://babaheights.com/ja/</loc><lastmod>2025-12-05</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://babaheights.com/ja/support.html</loc><lastmod>2025-12-05</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://babaheights.com/ko/</loc><lastmod>2025-12-05</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://babaheights.com/ko/support.html</loc><lastmod>2025-12-05</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://babaheights.com/nb/</loc><lastmod>2025-12-05</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://babaheights.com/nb/support.html</loc><lastmod>2025-12-05</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://babaheights.com/sv/</loc><lastmod>2025-12-05</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://babaheights.com/sv/support.html</loc><lastmod>2025-12-05</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://babaheights.com/en-GB/</loc><lastmod>2025-12-05</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://babaheights.com/en-GB/support.html</loc><lastmod>2025-12-05</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
-  <url><loc>https://babaheights.com/en-AU/</loc><lastmod>2025-12-05</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://babaheights.com/en-AU/support.html</loc><lastmod>2025-12-05</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://babaheights.com/da/</loc><lastmod>2025-12-05T00:00:00Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://babaheights.com/da/support.html</loc><lastmod>2025-12-05T00:00:00Z</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://babaheights.com/de-DE/</loc><lastmod>2025-12-05T00:00:00Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://babaheights.com/de-DE/support.html</loc><lastmod>2025-12-05T00:00:00Z</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://babaheights.com/fr-FR/</loc><lastmod>2025-12-05T00:00:00Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://babaheights.com/fr-FR/support.html</loc><lastmod>2025-12-05T00:00:00Z</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://babaheights.com/fr-CA/</loc><lastmod>2025-12-05T00:00:00Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://babaheights.com/fr-CA/support.html</loc><lastmod>2025-12-05T00:00:00Z</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://babaheights.com/nl-NL/</loc><lastmod>2025-12-05T00:00:00Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://babaheights.com/nl-NL/support.html</loc><lastmod>2025-12-05T00:00:00Z</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://babaheights.com/ja/</loc><lastmod>2025-12-05T00:00:00Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://babaheights.com/ja/support.html</loc><lastmod>2025-12-05T00:00:00Z</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://babaheights.com/ko/</loc><lastmod>2025-12-05T00:00:00Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://babaheights.com/ko/support.html</loc><lastmod>2025-12-05T00:00:00Z</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://babaheights.com/nb/</loc><lastmod>2025-12-05T00:00:00Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://babaheights.com/nb/support.html</loc><lastmod>2025-12-05T00:00:00Z</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://babaheights.com/sv/</loc><lastmod>2025-12-05T00:00:00Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://babaheights.com/sv/support.html</loc><lastmod>2025-12-05T00:00:00Z</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://babaheights.com/en-GB/</loc><lastmod>2025-12-05T00:00:00Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://babaheights.com/en-GB/support.html</loc><lastmod>2025-12-05T00:00:00Z</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://babaheights.com/en-AU/</loc><lastmod>2025-12-05T00:00:00Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://babaheights.com/en-AU/support.html</loc><lastmod>2025-12-05T00:00:00Z</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
 </urlset>
