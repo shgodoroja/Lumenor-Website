@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OhMyMind — Support</title>
+  <meta name="description" content="Contact OhMyMind support. We're here to help with any questions or issues." />
+  <link rel="canonical" href="https://ohmymind.app/support" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta property="og:title" content="OhMyMind — Support" />
+  <meta property="og:description" content="Contact OhMyMind support. We're here to help." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ohmymind.app/support" />
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon-180.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#0f172a" />
+</head>
+<body>
+  <header class="site">
+    <div class="container bar">
+      <div class="brand"><a href="/" style="color:inherit; text-decoration:none;"><img class="logo" src="/assets/favicon-32.png" alt="Icon" /> OhMyMind</a></div>
+      <nav>
+        <a href="/">Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container support-hero">
+      <h1 style="margin:0 0 6px;">We're here to help</h1>
+      <p class="sub" style="margin:0; max-width:720px;">Send us a note and we'll reply by email. Include details like iOS version, device model, and steps to reproduce if you're reporting an issue.</p>
+    </section>
+
+    <section class="container section">
+      <form id="support-form" class="support card pad" data-to="support@ohmymind.app">
+        <div class="form-row">
+          <div class="col field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" />
+          </div>
+          <div class="col field">
+            <label for="email">Email<span aria-hidden="true"> *</span></label>
+            <input id="email" name="email" type="email" required autocomplete="email" />
+            <div class="help">We'll reply to this address.</div>
+          </div>
+        </div>
+        <div class="field">
+          <label for="message">Message<span aria-hidden="true"> *</span></label>
+          <textarea id="message" name="message" rows="8" required placeholder="How can we help?"></textarea>
+        </div>
+        <div class="field">
+          <button class="btn primary" type="submit">Send message</button>
+          <span class="notice">Or email us directly: <a href="mailto:support@ohmymind.app">support@ohmymind.app</a></span>
+        </div>
+      </form>
+    </section>
+
+    <section class="container section" style="max-width: 920px; margin: 0 auto;">
+      <div class="card pad">
+        <h2 style="margin:0 0 12px;">Common Questions</h2>
+
+        <h3 style="font-size: 1.1rem; margin: 20px 0 8px;">How do I create a new board?</h3>
+        <p>You can create unlimited nested boards within your document. Simply use the board tool from the toolbar to add a new board to your infinite canvas.</p>
+
+        <h3 style="font-size: 1.1rem; margin: 20px 0 8px;">Can I import PDFs and images?</h3>
+        <p>Yes! OhMyMind supports importing PDFs, images, web pages, and sketches. You can drag and drop files directly onto your canvas or use the import options from the toolbar.</p>
+
+        <h3 style="font-size: 1.1rem; margin: 20px 0 8px;">How do I sync between devices?</h3>
+        <p>OhMyMind documents are stored in your iCloud Drive. Make sure iCloud Drive is enabled on all your devices to access your documents everywhere.</p>
+
+        <h3 style="font-size: 1.1rem; margin: 20px 0 8px;">What about Mac support?</h3>
+        <p>OhMyMind supports Mac through Mac Catalyst. Download the iOS app and it will run natively on your Mac with full keyboard and menu bar support.</p>
+
+        <h3 style="font-size: 1.1rem; margin: 20px 0 8px;">How do I restore my purchase?</h3>
+        <p>Open OhMyMind, go to the Buy screen (⌘⇧/ on Mac), and tap "Restore Purchases". Your purchase will be restored using your Apple ID.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container row">
+      <div>© <span id="year"></span> OhMyMind</div>
+      <div>
+        <a href="/oh-my-mind/privacy.html">Privacy</a>
+        <span style="opacity:.5; padding: 0 6px;">•</span>
+        <a href="/oh-my-mind/terms.html">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "OhMyMind Support",
+    "url": "https://ohmymind.app/support",
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "email": "support@ohmymind.app",
+      "contactType": "customer support",
+      "availableLanguage": ["en"]
+    }]
+  }
+  </script>
+  <script src="/scripts.js"></script>
+</body>
+</html>
