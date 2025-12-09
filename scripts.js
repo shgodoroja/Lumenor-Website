@@ -8,10 +8,18 @@ function track(event, data){
 }
 
 function ensureSmartBannerMeta(){
-  if(document.querySelector('meta[name="apple-itunes-app"]')) return;
+  const appId = (document.body && document.body.dataset && document.body.dataset.appId) ? document.body.dataset.appId : null;
+  if(!appId) return;
+  const existing = document.querySelector('meta[name="apple-itunes-app"]');
+  if(existing){
+    if(!existing.content.includes(appId)){
+      existing.content = `app-id=${appId}`;
+    }
+    return;
+  }
   const meta = document.createElement('meta');
   meta.name = 'apple-itunes-app';
-  meta.content = 'app-id=6754094107';
+  meta.content = `app-id=${appId}`;
   document.head.appendChild(meta);
 }
 
@@ -117,8 +125,8 @@ function initSupportForm(){
       alert('Please provide your email and a brief message.');
       return;
     }
-    const to = (form.dataset.to || 'lumenorapp@babaheights.com'); // set data-to="support@yourdomain"
-    const subject = encodeURIComponent('Lumenor Support Request');
+    const to = (form.dataset.to || 'hello@babaheights.com'); // set data-to="support@yourdomain"
+    const subject = encodeURIComponent('Baba Heights Support Request');
     const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
     const href = `mailto:${to}?subject=${subject}&body=${body}`;
     track('support_submit', { email });

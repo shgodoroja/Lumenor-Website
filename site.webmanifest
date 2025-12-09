@@ -1,6 +1,6 @@
 {
-  "name": "Lumenor",
-  "short_name": "Lumenor",
+  "name": "Baba Heights",
+  "short_name": "BabaHeights",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0b0f1a",
@@ -10,7 +10,5 @@
     { "src": "/assets/apple-touch-icon-180.png", "sizes": "180x180", "type": "image/png" },
     { "src": "/assets/favicon-32.png", "sizes": "32x32", "type": "image/png" },
     { "src": "/assets/favicon-16.png", "sizes": "16x16", "type": "image/png" }
-  ]
-}
   ]
 }
