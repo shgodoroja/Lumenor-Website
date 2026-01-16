@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ReadSafari — Support</title>
+  <meta name="description" content="Contact ReadSafari support. We’re here to help with missions, audio, and subscriptions." />
+  <link rel="canonical" href="https://babaheights.com/readsafari/support.html" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta property="og:title" content="ReadSafari — Support" />
+  <meta property="og:description" content="Contact ReadSafari support. We’re here to help." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://babaheights.com/readsafari/support.html" />
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon-180.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#0f172a" />
+</head>
+<body>
+  <header class="site">
+    <div class="container bar">
+      <div class="brand"><a href="/" style="color:inherit; text-decoration:none;"><img class="logo" src="/assets/favicon-32.png" alt="Icon" /> ReadSafari</a></div>
+      <nav>
+        <a href="/">Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container support-hero">
+      <h1 style="margin:0 0 6px;">We’re here to help</h1>
+      <p class="sub" style="margin:0; max-width:720px;">Send us a note and we’ll reply by email. If possible, include your iPad model, iOS/iPadOS version, and what mission/day you were on.</p>
+    </section>
+
+    <section class="container section">
+      <form id="support-form" class="support card pad" data-to="support@babaheights.com">
+        <div class="form-row">
+          <div class="col field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" />
+          </div>
+          <div class="col field">
+            <label for="email">Email<span aria-hidden="true"> *</span></label>
+            <input id="email" name="email" type="email" required autocomplete="email" />
+            <div class="help">We’ll reply to this address.</div>
+          </div>
+        </div>
+        <div class="field">
+          <label for="message">Message<span aria-hidden="true"> *</span></label>
+          <textarea id="message" name="message" rows="8" required placeholder="How can we help?"></textarea>
+        </div>
+        <div class="field">
+          <button class="btn primary" type="submit">Send message</button>
+          <span class="notice">Or email us directly: <a href="mailto:support@babaheights.com">support@babaheights.com</a></span>
+        </div>
+      </form>
+    </section>
+
+    <section class="container section" style="max-width: 920px; margin: 0 auto;">
+      <div class="card pad">
+        <h2 style="margin:0 0 12px;">Common Questions</h2>
+
+        <h3 style="font-size: 1.1rem; margin: 20px 0 8px;">How do I restore a subscription?</h3>
+        <p>Open the Parent Area, go to Subscription, then tap “Restore Purchases”. Make sure you’re signed into the same Apple ID used to purchase.</p>
+
+        <h3 style="font-size: 1.1rem; margin: 20px 0 8px;">Why can’t my child open the paywall?</h3>
+        <p>ReadSafari uses a parental gate. Subscription actions are intended for parents only.</p>
+
+        <h3 style="font-size: 1.1rem; margin: 20px 0 8px;">Audio sounds robotic or mispronounced</h3>
+        <p>Some sounds may use text-to-speech depending on your device. If you notice a pronunciation issue, tell us the word/sound and we’ll improve it.</p>
+
+        <h3 style="font-size: 1.1rem; margin: 20px 0 8px;">How do I reset progress?</h3>
+        <p>Contact us and tell us what you want to reset (streak, stars, or everything). We’ll also add a self-serve reset option if needed.</p>
+
+        <h3 style="font-size: 1.1rem; margin: 20px 0 8px;">What ages is ReadSafari for?</h3>
+        <p>ReadSafari is designed for early readers (Pre‑K and Kindergarten) with short daily missions.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container row">
+      <div>© <span id="year"></span> ReadSafari</div>
+      <div>
+        <a href="/readsafari/privacy.html">Privacy</a>
+        <span style="opacity:.5; padding: 0 6px;">•</span>
+        <a href="/readsafari/terms.html">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "ReadSafari Support",
+    "url": "https://babaheights.com/readsafari/support.html",
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "email": "support@babaheights.com",
+      "contactType": "customer support",
+      "availableLanguage": ["en"]
+    }]
+  }
+  </script>
+  <script src="/scripts.js"></script>
+</body>
+</html>
